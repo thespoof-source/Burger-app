@@ -1,0 +1,58 @@
+.container {
+  height: (100vh-100%);
+  background-color: #222;
+  display: flex;
+
+  gap: 10;
+}
+.item {
+  flex: 1;
+  position: relative;
+  display: flex;
+}
+.item:last-child {
+  flex: 2;
+  padding: 20px;
+  display: flex;
+}
+.card {
+  flex: 1;
+  padding: 0px 20px;
+}
+.title {
+  font-size: 20px;
+  color: #b7903c;
+  margin-top: 20px;
+}
+.text {
+  color: white;
+}
+.icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.moto {
+  color: slate;
+}
+@media screen and (max-width: 480px) {
+  .container {
+    height: auto;
+    text-align: center;
+  }
+  .item:first-child {
+    display: none;
+  }
+  .item {
+    flex-direction: column;
+  }
+  .title {
+    font-szie: 30px;
+  }
+
+  .text {
+    font-zie: 20px;
+  }
+}
